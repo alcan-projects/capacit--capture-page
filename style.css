@@ -131,8 +131,16 @@ a {
     text-decoration: underline var(--primary) 3px;
     text-shadow: 1px 1px 2px var(--primary2);
 }
-
-#apresentation .secund .boxed .card {
+/* Price */
+#price {
+    display: none;
+    justify-content: center;
+    padding: 3em 1em;
+}
+#price .card {
+    margin: 0px !important;
+}
+#apresentation .secund .boxed .card, #price .card {
     display: flex;
     flex-direction: column;
     background-color: var(--colorPrimary);
@@ -141,7 +149,7 @@ a {
     box-shadow: 0px 5px 30px 1px var(--primary);
     margin-top: 6em;
 }
-#apresentation .secund .boxed .card .title {
+#apresentation .secund .boxed .card .title, #price .card .title {
     background-color: var(--primary);
     text-align: center;
     color: var(--colorPrimary);
@@ -150,32 +158,33 @@ a {
     font-weight: 600;
     font-size: 20px;
 }
-#apresentation .secund .boxed .card .content {
+#apresentation .secund .boxed .card .content, #price .card .content {
     padding: 1em;
     display: flex;
     flex-direction: column;
 }
-#apresentation .secund .boxed .card .content h2 {
+#apresentation .secund .boxed .card .content h2, #price .card .content h2 {
     padding:1em 0px;
     color: var(--primary)
 }
-#apresentation .secund .boxed .card .content h2 span {
+#apresentation .secund .boxed .card .content h2 span, #price .card .content h2 span {
     color: var(--primary3);
     margin: 0 5px;
     font-size: 14px;
 }
-#apresentation .secund .boxed .card .content ul {
+#apresentation .secund .boxed .card .content ul, #price .card .content ul {
     padding-bottom: 1em;
 }
-#apresentation .secund .boxed .card .content ul li {
+#apresentation .secund .boxed .card .content ul li, #price .card .content ul li {
     padding: 1em 0;
+    display: flex;
 }
-#apresentation .secund .boxed .card .content ul li span {
+#apresentation .secund .boxed .card .content ul li span, #price .card .content ul li span {
     margin-right: 5px;
     color: rgb(51, 255, 0);
     margin-top: -2px;
 }
-#apresentation .secund .boxed .card .content a {
+#apresentation .secund .boxed .card .content a, #price .card .content a {
     margin-top: 2em;
 }
 
@@ -208,10 +217,8 @@ a {
 
 
 
-
-
 /* About */
-#about {
+.about {
     padding: 2em var(--paddingMax) 6em var(--paddingMax);
     background-image: linear-gradient(
       to right,
@@ -221,29 +228,29 @@ a {
     color: var(--colorPrimary);
 }
 
-#about.one {
+.about.one {
     padding: 2em var(--paddingMax) 0em var(--paddingMax);
 }
 
-#about h2 {
+.about h2 {
     text-align: center;
     padding: 1em 0 1.5em 0;
     font-size: 30px;
 }
 
-#about ul {
+.about ul {
     display: flex;
     flex-wrap: wrap;
 }
 
-#about ul li {
+.about ul li {
     display: flex;
     width: 46%;
     padding: 2%;
     line-height: 30px;
 }
 
-#about ul li span {
+.about ul li span {
     padding-right: 1em;
     padding-top: 7px; 
     color: var(--secondary);
@@ -351,7 +358,10 @@ footer a {
 @media (max-width: 1481px) {
     #apresentation {
         background-image: none;
-        background-color: #000;
+        background-color: var(--primary);
+    }
+    #apresentation .secund .boxed h1 span {
+        text-decoration: underline var(--primary3) 3px;
     }
     #apresentation .secund {
         padding: 0em var(--padding1400);
@@ -362,10 +372,10 @@ footer a {
     #description {
         padding: 4em var(--padding1400);
     }
-    #about {
+    .about {
         padding: 2em var(--padding1400) 6em var(--padding1400);
     }
-    #about.one {
+    .about.one {
         padding: 2em var(--padding1400) 0em var(--padding1400);
     }
     #author {
@@ -379,10 +389,10 @@ footer a {
     #description {
         padding: 4em var(--padding1300);
     }
-    #about {
+    .about {
         padding: 2em var(--padding1300) 6em var(--padding1300);
     }
-    #about.one {
+    .about.one {
         padding: 2em var(--padding1300) 0em var(--padding1300);
     }
     #author {
@@ -397,10 +407,10 @@ footer a {
     #description {
         padding: 4em var(--padding1200);
     }
-    #about {
+    .about {
         padding: 2em var(--padding1200) 6em var(--padding1200);
     }
-    #about.one {
+    .about.one {
         padding: 2em var(--padding1200) 0em var(--padding1200);
     }
     #author {
@@ -418,10 +428,10 @@ footer a {
     #description {
         padding: 4em var(--padding1000);
     }
-    #about {
+    .about {
         padding: 2em var(--padding1000) 6em var(--padding1000);
     }
-    #about.one {
+    .about.one {
         padding: 2em var(--padding1000) 0em var(--padding1000);
     }
     #author {
@@ -452,22 +462,22 @@ footer a {
         padding: 4em var(--padding900);
     }
 
-    #about {
+    .about {
         padding: 2em var(--padding900) 6em var(--padding900);
     }
-    #about ul {
+    .about ul {
         display: block;
     }
-    #about ul li {
+    .about ul li {
         width: 100%;
     }
-    #about.one {
+    .about.one {
         padding: 2em var(--padding900) 0em var(--padding900);
     }
     #author {
         padding: 2em var(--padding900);
     }
-    #about {
+    .about {
         padding: 2em var(--paddingMax) 6em var(--paddingMax);
         background-image: linear-gradient(
           to right,
@@ -485,7 +495,19 @@ footer a {
 }
 
 @media (max-width: 520px) {
-    p, li {
+    #price {
+        display: flex;
+    }
+    #price .card .content ul li {
+        padding: 0.5em 0;
+        align-items: start;
+    }
+    #price .card .title {
+        font-size: 24px;
+    }
+
+
+    p, li, a {
         font-size: 24px !important;
         line-height: 32px !important;
     }
@@ -509,10 +531,10 @@ footer a {
         font-size: 18px;
     }
 
-    #about {
+    .about {
         padding: 2em var(--padding400) 6em var(--padding400);
     }
-    #about.one {
+    .about.one {
         padding: 2em var(--padding400) 0em var(--padding400);
     }
     #author {
@@ -527,7 +549,7 @@ footer a {
     #author div#authorSub div#authorDesc div#authorText p a span {
         margin-top: 6px;
     }
-    #about {
+    .about {
         padding: 2em var(--padding400) 6em var(--padding400);
     }
     footer{
