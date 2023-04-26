@@ -1,0 +1,536 @@
+:root {
+    --primary: #00315d;
+    --primary2: #013790;
+    --primary3: #4389fa;
+    --secondary: #d5a147;
+    --secondaryShine: #e2ab4b;
+    --secondaryWhite: #fff1d9;
+    --secondary2: #fff;
+    --secondary3: #9393934d;
+    --secondary4: #f9f9f9;
+    --secondary5: #000;
+    --secondary6: #f7dfb6;
+
+    --colorPrimary: #fff;
+    --colorSecund: #000;
+
+    --primaryAtive: blueviolet;
+    --colorButton: #fff;
+    --borderRadius: 5px;
+    --primaryHover: #a149f1;
+
+    --hoverPrimary: #cee8ff;
+    --hoverSecundary: #ffe6bb;
+
+    --paddingMax: 15em;
+    --padding1400: 10em;
+    --padding1300: 7em;
+    --padding1200: 5em;
+    --padding1000: 2em;
+    --padding900: 2em;
+    --padding400: 1em;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+};
+input:focus, select:focus, button:focus, textarea:focus {
+      outline: none;
+};
+a {
+    display: block;
+    text-decoration: none;
+}
+body {
+    overflow: hidden;
+    overflow-y: auto;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--primary);
+}
+body::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: var(--secondary);
+    border-radius: 100px;
+}
+li {
+    list-style-type: none;
+}
+p {
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+}
+
+/* Bootstrap */
+.btn {
+    padding: 1em;
+    border-radius: var(--borderRadius);
+    text-align: center;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.btn.btn-secundary {
+    background-color: var(--secondary);
+    color: var(--colorPrimary);
+}
+.btn.btn-secundary:hover {
+    background-color: var(--secondaryShine);
+    box-shadow: 0px 10px 10px 1px var(--hoverSecundary);
+    transition: 0.2s;
+}
+.btn.btn-primary {
+    background-color: var(--primary);
+    color: white
+}
+.btn.btn-primary:hover {
+    background-color: var(--primary2);
+    box-shadow: 0px 10px 10px 1px var(--hoverPrimary);
+}
+
+
+
+
+
+/* Apresentation */
+#apresentation {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/background.png");
+    object-fit: cover;
+    background-size: 100%;
+  }
+#apresentation .secund {
+    padding: 0em var(--paddingMax);
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#apresentation .secund .boxed h1 {
+    color: var(--colorPrimary);
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    line-height: 70px;
+}
+#apresentation .secund .boxed .ass {
+    font-family: 'Dancing Script', cursive;
+    color: var(--colorPrimary);
+    font-size: 30px;
+    text-align: end;
+    padding-top: 0.5em;
+}
+#apresentation .secund .boxed h1 span {
+    color: var(--secondary);
+    font-family: 'Lobster', cursive;
+    text-decoration: underline var(--primary) 3px;
+    text-shadow: 1px 1px 2px var(--primary2);
+}
+
+#apresentation .secund .boxed .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorPrimary);
+    border-radius: var(--borderRadius);
+    min-width: 350px;
+    box-shadow: 0px 5px 30px 1px var(--primary);
+    margin-top: 6em;
+}
+#apresentation .secund .boxed .card .title {
+    background-color: var(--primary);
+    text-align: center;
+    color: var(--colorPrimary);
+    border-radius: var(--borderRadius) var(--borderRadius) 0px 0px;
+    padding: 1em 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+#apresentation .secund .boxed .card .content {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+#apresentation .secund .boxed .card .content h2 {
+    padding:1em 0px;
+    color: var(--primary)
+}
+#apresentation .secund .boxed .card .content h2 span {
+    color: var(--primary3);
+    margin: 0 5px;
+    font-size: 14px;
+}
+#apresentation .secund .boxed .card .content ul {
+    padding-bottom: 1em;
+}
+#apresentation .secund .boxed .card .content ul li {
+    padding: 1em 0;
+}
+#apresentation .secund .boxed .card .content ul li span {
+    margin-right: 5px;
+    color: rgb(51, 255, 0);
+    margin-top: -2px;
+}
+#apresentation .secund .boxed .card .content a {
+    margin-top: 2em;
+}
+
+
+
+
+
+
+
+/* Description */
+#description {
+    padding: 4em var(--paddingMax);
+    text-align: center;
+}
+#description h1 {
+    font-size: 40px;
+    color: var(--secondary);
+    padding-bottom: 1em;
+}
+#description div {
+    padding-top: 5em;
+    padding-bottom: 1em
+}
+#description div a {
+    padding: 1em 10em;
+}
+
+
+
+
+
+
+
+
+/* About */
+#about {
+    padding: 2em var(--paddingMax) 6em var(--paddingMax);
+    background-image: linear-gradient(
+      to right,
+      var(--primary),
+      var(--primary2)
+    );
+    color: var(--colorPrimary);
+}
+
+#about.one {
+    padding: 2em var(--paddingMax) 0em var(--paddingMax);
+}
+
+#about h2 {
+    text-align: center;
+    padding: 1em 0 1.5em 0;
+    font-size: 30px;
+}
+
+#about ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about ul li {
+    display: flex;
+    width: 46%;
+    padding: 2%;
+    line-height: 30px;
+}
+
+#about ul li span {
+    padding-right: 1em;
+    padding-top: 7px; 
+    color: var(--secondary);
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Author */
+#author {
+    padding: 2em var(--paddingMax);
+}
+
+#author div#authorSub {
+    border: solid 2px var(--secondary3);
+    margin-top: -4em;
+    background-color: var(--colorPrimary);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#author div#authorSub div#authorDesc {
+    display: flex;
+}
+
+#author div#authorSub div#authorDesc img {
+    width: 50%;
+    object-fit: cover;
+    height: 500px;
+}
+
+#author div#authorSub div#authorDesc div#authorText {
+    padding: 1em;
+}
+#author div#authorSub div#authorDesc div#authorText h2 {
+    text-align: start;
+    font-size: 34px;
+    padding: 0.5em 0 1em 0;
+    color: var(--primary);
+}
+#author div#authorSub div#authorDesc div#authorText p {
+    display: flex;
+}
+#author div#authorSub div#authorDesc div#authorText p a {
+    font-size: 20px;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+#author div#authorSub div#authorDesc div#authorText p a span {
+    color: var(--primary);
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+#author div#authorSub div#authorDesc div#authorText p span {
+    margin-right: 9px;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+#author div#authorSub div#authorDesc div#authorText ul {
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+#author div#authorSub div#authorDesc div#authorText ul li {
+    list-style-type: circle;
+    padding-bottom: 0.5em;
+    font-size: 18px;
+}
+
+footer {
+    padding: 0.5em var(--paddingMax);
+    color: var(--colorPrimary);
+    background-image: linear-gradient(
+        to right,
+        var(--primary),
+        var(--primary2)
+    );
+}
+footer a {
+    color: var(--colorPrimary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 1481px) {
+    #apresentation {
+        background-image: none;
+        background-color: #000;
+    }
+    #apresentation .secund {
+        padding: 0em var(--padding1400);
+    }
+    #apresentation .secund .boxed h1 {
+        font-size: 40px;
+    }
+    #description {
+        padding: 4em var(--padding1400);
+    }
+    #about {
+        padding: 2em var(--padding1400) 6em var(--padding1400);
+    }
+    #about.one {
+        padding: 2em var(--padding1400) 0em var(--padding1400);
+    }
+    #author {
+        padding: 2em var(--padding1400);
+    }
+}
+@media (max-width: 1300px) {
+    #apresentation .secund {
+        padding: 0em var(--padding1300);
+    }
+    #description {
+        padding: 4em var(--padding1300);
+    }
+    #about {
+        padding: 2em var(--padding1300) 6em var(--padding1300);
+    }
+    #about.one {
+        padding: 2em var(--padding1300) 0em var(--padding1300);
+    }
+    #author {
+        padding: 2em var(--padding1300);
+    }
+}
+
+@media (max-width: 1200px) {
+    #apresentation .secund {
+        padding: 0em var(--padding1200);
+    }
+    #description {
+        padding: 4em var(--padding1200);
+    }
+    #about {
+        padding: 2em var(--padding1200) 6em var(--padding1200);
+    }
+    #about.one {
+        padding: 2em var(--padding1200) 0em var(--padding1200);
+    }
+    #author {
+        padding: 2em var(--padding1200);
+    }
+    footer{
+        padding: 1em var(--padding1200);
+    }
+    
+}
+@media (max-width: 1000px) {
+    #apresentation .secund {
+        padding: 0em var(--padding1000);
+    }
+    #description {
+        padding: 4em var(--padding1000);
+    }
+    #about {
+        padding: 2em var(--padding1000) 6em var(--padding1000);
+    }
+    #about.one {
+        padding: 2em var(--padding1000) 0em var(--padding1000);
+    }
+    #author {
+        padding: 2em var(--padding1000);
+    }
+    footer{
+        padding: 1em var(--padding1000);
+    }
+}
+@media (max-width: 900px) {
+    #apresentation {
+        height: auto;
+    }
+    #apresentation .secund {
+        padding: 2em var(--padding900);
+        display: block;
+    }
+    #apresentation .secund .boxed h1 {
+        font-size: 40px;
+        line-height: 65px;
+        padding-top: 1em;
+        text-align: center;
+    }
+    #apresentation .secund .boxed:nth-child(2){
+        display: none;
+    }
+    #description {
+        padding: 4em var(--padding900);
+    }
+
+    #about {
+        padding: 2em var(--padding900) 6em var(--padding900);
+    }
+    #about ul {
+        display: block;
+    }
+    #about ul li {
+        width: 100%;
+    }
+    #about.one {
+        padding: 2em var(--padding900) 0em var(--padding900);
+    }
+    #author {
+        padding: 2em var(--padding900);
+    }
+    #about {
+        padding: 2em var(--paddingMax) 6em var(--paddingMax);
+        background-image: linear-gradient(
+          to right,
+          var(--primary),
+          var(--primary2)
+        );
+        color: var(--colorPrimary);
+    }
+    #author div#authorSub div#authorDesc img {
+        display: none;
+    }
+    footer{
+        padding: 1em var(--padding900);
+    }
+}
+
+@media (max-width: 520px) {
+    p, li {
+        font-size: 24px !important;
+        line-height: 32px !important;
+    }
+    #apresentation .secund .boxed h1 {
+        font-size: 30px;
+        line-height: 55px;
+    }
+    #apresentation .secund {
+        padding: 2em var(--padding400);
+    }
+    #description {
+        padding: 4em var(--padding400);
+    }
+    #description div {
+        width: 100%;
+    }
+    #description div a {
+        padding: 1em 0;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    #about {
+        padding: 2em var(--padding400) 6em var(--padding400);
+    }
+    #about.one {
+        padding: 2em var(--padding400) 0em var(--padding400);
+    }
+    #author {
+        padding: 2em var(--padding400);
+    }
+    #author div#authorSub div#authorDesc div#authorText p {
+        text-align: justify;
+    }
+    #author div#authorSub div#authorDesc div#authorText p a {
+        align-items: start;
+    }
+    #author div#authorSub div#authorDesc div#authorText p a span {
+        margin-top: 6px;
+    }
+    #about {
+        padding: 2em var(--padding400) 6em var(--padding400);
+    }
+    footer{
+        padding: 1em var(--padding400);
+    }
+}
