@@ -478,7 +478,7 @@ footer a {
         padding: 2em var(--padding900);
     }
     .about {
-        padding: 2em var(--paddingMax) 6em var(--paddingMax);
+        padding: 2em var(--padding900) 6em var(--padding900);
         background-image: linear-gradient(
           to right,
           var(--primary),
