@@ -97,16 +97,22 @@ a {
 
 /* Apresentation */
 #apresentation {
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     background-image: url("/assets/background.jpeg");
     object-fit: cover;
     background-size: 100%;
-  }
+}
+#apresentation div.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 2em;
+}
 #apresentation .secund {
     padding: 0em var(--paddingMax);
     display: flex;
-    height: 100%;
+    height: 90%;
     align-items: center;
     justify-content: space-between;
 }
